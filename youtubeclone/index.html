@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+  </head>
+  <body>
+    <!-- header section  -->
+    <div class="header">
+      <div class="left-section">
+        <img
+          class="hamburger-menu"
+          src="/youtubeclone/icons/hamburger-menu.svg"
+          alt="hamburger-menu"
+        />
+        <img
+          class="youtube-logo"
+          src="/youtubeclone/icons/youtube-logo.svg"
+          alt="youtube-logo"
+        />
+      </div>
+      <div class="middle-section">
+        <!-- search bar -->
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-btn">
+          <img
+            class="search-icon"
+            src="/youtubeclone/icons/search.svg"
+            alt="search-btn"
+          />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-btn">
+          <img
+            class="voice-icon"
+            src="/youtubeclone/icons/voice-search-icon.svg"
+            alt="voice-btn"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <button class="create-btn"><span>&#43;</span> Create</button>
+        <div class="notification-icon-container">
+          <img
+            class="notification-icon"
+            src="/youtubeclone/icons/notifications.svg"
+            alt="notification"
+          />
+          <div class="tooltip">Notifications</div>
+          <div class="notifications-count">3</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="/youtubeclone/channel- picture/my profile photo.jpg"
+          alt="current-user-picture"
+        />
+      </div>
+    </div>
+    <!-- end of header section  -->
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="/youtubeclone/icons/home.svg" alt="home" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/youtubeclone/icons/shorts.jpg" alt="shorts" />
+        <div>Shorts</div>
+      </div>
+      <div class="second-section-sidebar">
+        <div class="main-headings">Subscriptions &#62;</div>
+
+        <div class="sidebar-link">
+          <img
+            src="/youtubeclone/channel- picture/channnel picture 9.jpg"
+            alt="channel-picture-9"
+          />
+          <div>Saina Movies</div>
+        </div>
+        <div class="sidebar-link">
+          <img
+            src="/youtubeclone/channel- picture/channel picture 12.jpg"
+            alt="channel-picture-12"
+          />
+          <div>ramya</div>
+        </div>
+        <div class="sidebar-link">
+          <img
+            src="/youtubeclone/channel- picture/channel picture 2.jpg"
+            alt="channel-picture-2"
+          />
+          <div>Versatile</div>
+        </div>
+        <div class="sidebar-link">
+          <img
+            src="/youtubeclone/channel- picture/channel picture 4.jpg"
+            alt="channel-picture-4"
+          />
+          <div>Fad3nHD</div>
+        </div>
+        <div class="sidebar-link">
+          <img
+            src="/youtubeclone/channel- picture/channel picture 7.jpg"
+            alt="channel-picture-7"
+          />
+          <div>ChessBase India</div>
+        </div>
+        <div class="sidebar-link">
+          <img
+            src="/youtubeclone/channel- picture/channel picture 1.jpg"
+            alt="channel-picture-1"
+          />
+          <div>Music Today</div>
+        </div>
+        <div class="show-more">Show More &#8744;</div>
+      </div>
+      <div class="third-section">
+        <div class="main-headings">You &#62;</div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/watchlater.png" alt="history" />
+          <div>History</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/playlist.png" alt="playlists" />
+          <div>Playlists</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/watchlater.png" alt="watch-later" />
+          <div>Watch Later</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/like.png" alt="liked-videos" />
+          <div>Liked videos</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/your videos.png" alt="your-videos" />
+          <div>Your videos</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/downloads.png" alt="downloads" />
+          <div>Downloads</div>
+        </div>
+        <div class="show-more">Show More &#8744;</div>
+      </div>
+      <div class="fourth-section">
+        <div class="main-headings">Explore &#62;</div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/shopping.jpg" alt="shopping" />
+          <div>Shopping</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/music.png" alt="music" />
+          <div>Music</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/film.jpg" alt="filims" />
+          <div>Filims</div>
+        </div>
+        <div class="show-more">Show More &#8744;</div>
+      </div>
+      <div class="fifth-section">
+        <div class="main-headings">More From Youtube &#62;</div>
+        <div class="sidebar-link">
+          <img
+            src="/youtubeclone/icons/youtube-music-icon-free-png.webp"
+            alt="music"
+          />
+          <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+          <img src="/youtubeclone/icons/kids.png" alt="kids" />
+          <div>YouTube Kids</div>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/youtubeclone/icons/report.png" alt="report" />
+        <div>Report History</div>
+      </div>
+      <div class="sixth-section">
+        <div>About Press Copyright</div>
+        <div>Contact us Creator Advertise</div>
+        <div>Developers</div>
+      </div>
+      <div class="seventh-section">
+        <div>Terms Privacy Policy & Safety</div>
+        <div>How YouTube works Test</div>
+        <div>new features</div>
+      </div>
+      <div class="eight-one">© 2026 Google LLCgit</div>
+    </div>
+
+    <!-- buttons  -->
+    <div class="buttons">
+      <button class="btn-all">All</button>
+      <button class="btn-all">Music</button>
+      <button class="btn-all">Carnatic Music</button>
+      <button class="btn-all">Live</button>
+      <button class="btn-all">Chess</button>
+      <button class="btn-all">Web Development</button>
+      <button class="btn-all">Algorithms</button>
+      <button class="btn-all">skills</button>
+      <button class="btn-all">TED</button>
+      <button class="btn-all">Intelligence</button>
+      <button class="btn-all">Mixes</button>
+    </div>
+    <!-- main content -->
+    <div class="video-grid">
+      <!-- video number 1-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!-- position absolute inside the position relative -->
+          <!--this is the relative element-->
+          <a href="https://youtu.be/KkjuKwD2Yvw?si=vtZq9ZItxbko9aI1">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 1.avif"
+              alt="thumbnail-1"
+            />
+            <div class="video-time">1:03:02</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 1.jpg"
+              alt="channel-picture-1"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Thyagaraja's Pancharatna Kritis | Audio Jukebox | Vocal | Carnatic
+              | Malladi Brothers
+            </p>
+            <p class="video-author">Music Today</p>
+            <p class="video-stats">753k views 10 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 2-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/QVWINTeyUOk?si=nTGI3HbfB4bkZMUO">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 2.avif"
+              alt="thumbnail-2"
+            />
+            <div class="video-time">6:44</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 2.jpg"
+              alt="channel-picture-2"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              This Dopamine Trick Will Make You Addicted To Studying
+            </p>
+            <p class="video-author">Versatile</p>
+            <p class="video-stats">1.5m views 5 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 3-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/G_M9Ond5LFE?si=g1tw8KHqP-J0E0AO">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 3.avif"
+              alt="thumbnail-3"
+            />
+            <div class="video-time">6:22</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 3.jpg"
+              alt="channel-picture-3"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Impossible Batting Challenge</p>
+            <p class="video-author">The Switch | Kevin Pietersen</p>
+            <p class="video-stats">10m views 1 month ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 4-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/Ft6WbN10p68?si=VljNCWWWQMxcnsd4">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 4.avif"
+              alt="thumbnail-4"
+            />
+            <div class="video-time">20:10</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 4.jpg"
+              alt="channel-picture-4"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">The Art of Football by Lionel Messi</p>
+            <p class="video-author">Fad3nHD</p>
+            <p class="video-stats">603k views 10 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 5-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/t0AWV6IMemE?si=_nOwTEL5mswyR9eR">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 5.avif"
+              alt="thumbnail-5"
+            />
+            <div class="video-time">25:21</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 5.jpg"
+              alt="channel-picture-5"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Thaniyavarthanam</p>
+            <p class="video-author">THALANADU MANU</p>
+            <p class="video-stats">596 views 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 6-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/G3e-cpL7ofc?si=8dRJL0eMlZ8SUyjG">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 6.avif"
+              alt="thumbnail-6"
+            />
+            <div class="video-time">6:31:16</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 6.jpg"
+              alt="channel-picture-6"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">HTML & CSS Full Course - Beginner to Pro</p>
+            <p class="video-author">SuperSimpleDev</p>
+            <p class="video-stats">18m views 4 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 7-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/F433NCRC624?si=BJ7O4T6TRHMjGuVF">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 7.avif"
+              alt="thumbnail-7"
+            />
+            <div class="video-time">19:17</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 7.jpg"
+              alt="channel-picture-7"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              The Selfie Game | Kazakh no.2 vs World no.1 | Alua Nurman vs
+              Magnus Carlsen | Grenke Freestyle 2026
+            </p>
+            <p class="video-author">ChessBase India</p>
+            <p class="video-stats">144k views 3 days ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 8 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/iXcQ94jVpKQ?si=8iGNKnxWOAt4TVnb">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 8.avif"
+              alt="thumbnail-8"
+            />
+            <div class="video-time">2:30:29</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 8.jpg"
+              alt="channel-picture-8"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Pavithram | Malayalam Full Movie HD | Mohanlal, Shobana, Thilakan,
+              Srividya, Nedumudi Venu, Innocent
+            </p>
+            <p class="video-author">MOVIE ZONE ENTERTAINMENTS</p>
+            <p class="video-stats">668k views 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 9 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/wD9Fh468UOU?si=XEE3Mb_Wf3FKVC2F">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 9.avif"
+              alt="thumbnail-9"
+            />
+            <div class="video-time">2:41:13</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channnel picture 9.jpg"
+              alt="channel-picture-9"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Ayal katha Ezhuthukayanu | Full Movie 4K Remastered | Mohanlal |
+              Sreenivasan | Nandini | Kamal
+            </p>
+            <p class="video-author">Saina Movies</p>
+            <p class="video-stats">1.5m views 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 10 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/16_qTNaY5AA?si=HMcHG8nq620P9eYb">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 10.avif"
+              alt="thumbnail-10"
+            />
+            <div class="video-time">4:57</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 10.jpg"
+              alt="channel-picture-10"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Developers Danger Zone - Survive ചെയ്യാൻ ഇത് അറിയണം!
+            </p>
+            <p class="video-author">Brototype Malayalam</p>
+            <p class="video-stats">8.2k views 1 day ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 11 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/Hu4Yvq-g7_Y?si=ZWfxnHMWDO-DZRZM">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 11.avif"
+              alt="thumbnail-11"
+            />
+            <div class="video-time">15:57</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 11.jpg"
+              alt="channel-picture-11"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              How to Get Your Brain to Focus | Chris Bailey | TEDxManchester
+            </p>
+            <p class="video-author">TEDx Talks</p>
+            <p class="video-stats">19m views 7 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 12 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/mXXhhq2AQrE?si=tMfzmBX1ouid30lg">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 12.avif"
+              alt="thumbnail-12"
+            />
+            <div class="video-time">13:21</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 12.jpg"
+              alt="channel-picture-12"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Stop Wasting Semesters | A Practical Roadmap for Engineering
+              Students
+            </p>
+            <p class="video-author">ramya</p>
+            <p class="video-stats">83k views 2 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 13 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/5beOlS5Ts24?si=yMdoVae1Xwmwsp_p">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 13.avif"
+              alt="thumbnail-13"
+            />
+            <div class="video-time">12:24</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 13.jpg"
+              alt="channel-picture-13"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Every Programming Language Explained in 12 Minutes
+            </p>
+            <p class="video-author">Computer Science Explainer</p>
+            <p class="video-stats">427k views 5 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 14-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/Nz9eAaXRzGg?si=1nru6IYIIzzfAPRu">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 14.avif"
+              alt="thumbnail-14"
+            />
+            <div class="video-time">9:25</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 11.jpg"
+              alt="channel-picture-14"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              How to protect your brain from stress | Niki Korteweg |
+              TEDxAmsterdamWomen
+            </p>
+            <p class="video-author">TEDx Talks</p>
+            <p class="video-stats">3m views 6 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- video number 15 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://youtu.be/VZTEww6GaLM?si=ZY2qANBdUwVNMBNG">
+            <img
+              class="thumbnail"
+              src="/youtubeclone/thumbnail/img 15.avif"
+              alt="thumbnail-15"
+            />
+            <div class="video-time">8:06</div>
+          </a>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/youtubeclone/channel- picture/channel picture 15.jpg"
+              alt="channel-picture-15"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              How I Tricked My Brain to Be Addicted to Coding (The Dopamine
+              Hack)
+            </p>
+            <p class="video-author">Ashish Pratap Singh</p>
+            <p class="video-stats">574k views 1 year ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
