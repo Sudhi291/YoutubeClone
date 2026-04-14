@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youtube-clone</title>
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+  </head>
+  <body>
+    <!-- header section  -->
+    <header class="header">
+      <!-- left section  -->
+      <div class="left-section">
+        <img
+          class="hamburger-menu"
+          src="/youtube-clone/images/icons/hamburger-menu.svg"
+          alt="hamburger-menu"
+        />
+        <img
+          class="youtube-logo"
+          src="/youtube-clone/images/icons/youtube-main-logo.svg"
+          alt="youtube-main-logo"
+        />
+      </div>
+      <!-- middle section  -->
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-btn">
+          <img
+            class="search-icon"
+            src="/youtube-clone/images/icons/search.svg"
+            alt="search"
+          />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search">
+          <img
+            class="voice-search-btn"
+            src="/youtube-clone/images/icons/voice-search-icon.svg"
+            alt="voice-search"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <!-- right section  -->
+      <div class="right-section">
+        <button class="create-btn">
+          <span class="plus-symbol">&#43;</span> Create
+        </button>
+        <div class="notifications-icon-container">
+          <img
+            class="notification"
+            src="/youtube-clone/images/icons/notifications.svg"
+            alt="notification"
+          />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img
+          class="profile-photo"
+          src="/youtube-clone/images/profile/my profile.jpg"
+          alt="my-profile-photo"
+        />
+      </div>
+    </header>
+    <!-- sidebar section  -->
+    <div class="sidebar">
+      <!-- first section  -->
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/home.svg"
+          alt="home"
+        />
+        <div class="texts-sidebar">Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/shorts.jpg"
+          alt="shorts"
+        />
+        <div class="texts-sidebar">Shorts</div>
+      </div>
+      <hr />
+      <!-- second section  -->
+      <div class="about-sidebar">Subscriptions &#62;</div>
+      <div class="sidebar-link">
+        <img
+          class="sidebar-profile"
+          src="/youtube-clone/images/profile/channel-profile-1.jpg"
+          alt="sidebar-profile-1"
+        />
+        <div class="sidebar-author">Aasil Khan</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="sidebar-profile"
+          src="/youtube-clone/images/profile/channel-profile-2.jpg"
+          alt="sidebar-profile-2"
+        />
+        <div class="sidebar-author">James Peralta</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="sidebar-profile"
+          src="/youtube-clone/images/profile/channel-profile-3.jpg"
+          alt="sidebar-profile-3"
+        />
+        <div class="sidebar-author">SuperSimpleDev</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="sidebar-profile"
+          src="/youtube-clone/images/profile/channel-profile-4.jpg"
+          alt="sidebar-profile-4"
+        />
+        <div class="sidebar-author">CodeWithHarry</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="sidebar-profile"
+          src="/youtube-clone/images/profile/channel-profile-5.jpg"
+          alt="sidebar-profile-5"
+        />
+        <div class="sidebar-author">Tim Kim</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="sidebar-profile"
+          src="/youtube-clone/images/profile/channel-profile-6.jpg"
+          alt="sidebar-profile-6"
+        />
+        <div class="sidebar-author">Geekboots</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="sidebar-profile"
+          src="/youtube-clone/images/profile/channel-profile-10.jpg"
+          alt="sidebar-profile-10"
+        />
+        <div class="sidebar-author">Coding2GO</div>
+      </div>
+      <div class="show-more">&#8744; Show more</div>
+      <hr />
+      <!-- third section  -->
+      <div class="about-sidebar">You &#62;</div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/watchlater.png"
+          alt="history"
+        />
+        <div class="texts-sidebar">History</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/playlist.png"
+          alt="playlist"
+        />
+        <div class="texts-sidebar">Playlists</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/watchlater.png"
+          alt="watch-later"
+        />
+        <div class="texts-sidebar">Watch Later</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/like.png"
+          alt="liked-videos"
+        />
+        <div class="texts-sidebar">Liked videos</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/videos.png"
+          alt="Your videos"
+        />
+        <div class="texts-sidebar">Your videos</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/downloads.png"
+          alt="Downloads"
+        />
+        <div class="texts-sidebar">Downloads</div>
+      </div>
+      <div class="show-more">&#8744; Show more</div>
+      <hr />
+      <!-- fourth section  -->
+      <div class="about-sidebar">Explore &#62;</div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/shopping.jpg"
+          alt="Shopping"
+        />
+        <div class="texts-sidebar">Shopping</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/music.png"
+          alt="Music"
+        />
+        <div class="texts-sidebar">Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/film.jpg"
+          alt="Films"
+        />
+        <div class="texts-sidebar">Films</div>
+      </div>
+      <div class="show-more">&#8744; Show more</div>
+      <hr />
+      <div class="about-sidebar">More From Youtube &#62;</div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/youtube-music-icon-free-png.webp"
+          alt="YouTube Music"
+        />
+        <div class="texts-sidebar">YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="icons-sidebar"
+          src="/youtube-clone/images/icons/youtube-kids.png"
+          alt="YouTube Kids"
+        />
+        <div class="texts-sidebar">YouTube Kids</div>
+      </div>
+      <hr />
+      <div class="sidebar-link">
+        <img
+          class="report-sidebar"
+          src="/youtube-clone/images/icons/repot.png"
+          alt="Report History"
+        />
+        <div class="report-sidebar">Report History</div>
+      </div>
+      <hr />
+      <div class="sidebar-footer-a">
+        <p>About Press Copyright</p>
+        <p>Contact us Creator Advertise</p>
+        <p>Developers</p>
+      </div>
+      <div class="sidebar-footer-b">
+        <p>Terms Privacy Policy & Safety</p>
+        <p>How YouTube works Test</p>
+        <p>new features</p>
+      </div>
+      <div class="last-one">© 2026 Google LLCgit</div>
+    </div>
+
+    <!-- main content -->
+    <main class="main-content">
+      <!-- buttons  -->
+      <div class="buttons">
+        <button class="btn">All</button>
+        <button class="btn">Music</button>
+        <button class="btn">Bowling</button>
+        <button class="btn">JavaScript</button>
+        <button class="btn">Mixes</button>
+        <button class="btn">News</button>
+        <button class="btn">Chess</button>
+        <button class="btn">Live</button>
+        <button class="btn">Watched</button>
+        <button class="btn">Seminars</button>
+        <button class="btn">Html</button>
+      </div>
+      <!-- video grids -->
+      <div class="video-grid">
+        <!-- first card  -->
+        <div class="video-preview">
+          <a href="https://youtu.be/yVdxZ50tmNA?si=E-SkgWbz-tOYfk3Y">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-1.avif"
+                alt="img-1"
+              />
+              <div class="video-time">15:02</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-1.jpg"
+                alt="channel-picture-1"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Client Paid Me ₹32,211.60 to edit this video in 48 hours
+              </p>
+              <p class="video-author">Aasil Khan</p>
+              <p class="video-stats">216k views 4 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="video-preview">
+          <a href="https://youtu.be/DRl4P8QttZ4?si=4kK1xZ3upOjFDPzH">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-2.avif"
+                alt="img-2"
+              />
+              <div class="video-time">56:32</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-2.jpg"
+                alt="channel-picture-2"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">I Design A Remote IDE</p>
+              <p class="video-author">James Peralta</p>
+              <p class="video-stats">453 views 1 day ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- third card -->
+        <div class="video-preview">
+          <a href="https://youtu.be/G3e-cpL7ofc?si=_K5fVRmH7BqoG5WN">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-3.avif"
+                alt="img-3"
+              />
+              <div class="video-time">6:31:16</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-3.jpg"
+                alt="channel-picture-3"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                HTML & CSS Full Course - Beginner to Pro
+              </p>
+              <p class="video-author">SuperSimpleDev</p>
+              <p class="video-stats">18m views 4 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- fourth card -->
+        <div class="video-preview">
+          <a href="https://youtu.be/0HyIda5eub8?si=a9JSa20ANVWk4_B_">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-4.avif"
+                alt="img-4"
+              />
+              <div class="video-time">16:54</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-4.jpg"
+                alt="channel-picture-4"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Learn Coding & Get a Job (in 2025) 🔥</p>
+              <p class="video-author">CodeWithHarry</p>
+              <p class="video-stats">4.6m views 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- fifth card  -->
+        <div class="video-preview">
+          <a href="https://youtu.be/WR1ydijTx5E?si=B-x7o1u5Dmgfll2e">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-5.avif"
+                alt="img-5"
+              />
+              <div class="video-time">9:51</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-5.jpg"
+                alt="channel-picture-5"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How I Learned to Code in 4 Months & Got a Job!
+              </p>
+              <p class="video-author">Tim Kim</p>
+              <p class="video-stats">8.9m views 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- sixth card -->
+        <div class="video-preview">
+          <a href="https://youtu.be/iVd2z-f5yuM?si=Zrt4EA0tAuvTfr0o">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-6.avif"
+                alt="img-6"
+              />
+              <div class="video-time">2:55</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-6.jpg"
+                alt="channel-picture-6"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How to Become a Full Stack Developer in 2025
+              </p>
+              <p class="video-author">Geekboots</p>
+              <p class="video-stats">21k views 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- seventh card -->
+        <div class="video-preview">
+          <a href="https://youtu.be/sEAyggVL9tw?si=ECrx38sHYs3vWJfg">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-7.avif"
+                alt="img-7"
+              />
+              <div class="video-time">39:06</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-7.jpg"
+                alt="channel-picture-7"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Web Development For Babies</p>
+              <p class="video-author">Brototype Malayalam</p>
+              <p class="video-stats">587k views 5 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- eight card -->
+        <div class="video-preview">
+          <a href="https://youtu.be/XGa4onZP66Q?si=cJPH0uNLvofo0R3-">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-8.avif"
+                alt="img-8"
+              />
+              <div class="video-time">5:21</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-8.jpg"
+                alt="channel-picture-8"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">What is an API ? Simply Explained</p>
+              <p class="video-author">Apna College</p>
+              <p class="video-stats">3m views 4 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- nineth card -->
+        <div class="video-preview">
+          <a href="https://youtu.be/L9TfZdODuFQ?si=F6jWlpaiidAbHfK4">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-9.avif"
+                alt="img-9"
+              />
+              <div class="video-time">7:10</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-9.jpg"
+                alt="channel-picture-9"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How to Answer System Design Interview Questions
+              </p>
+              <p class="video-author">Exponent</p>
+              <p class="video-stats">573k views 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- card ten  -->
+        <div class="video-preview">
+          <a href="https://youtu.be/bCkfU_wHPcY?si=FPsAYNhhDPXanTMx">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-10.avif"
+                alt="img-10"
+              />
+              <div class="video-time">6:38</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-10.jpg"
+                alt="channel-picture-10"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                All The JavaScript You Need BEFORE React
+              </p>
+              <p class="video-author">Coding2GO</p>
+              <p class="video-stats">128k views 3 months ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 11 -->
+
+        <div class="video-preview">
+          <a href="https://youtu.be/2So7ZooIEoU?si=jBhJ7m1F4T4tqlHx">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-11.avif"
+                alt="img-11"
+              />
+              <div class="video-time">12:26</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-11.jpg"
+                alt="channel-picture-11"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Pragg playing Freestyle Chess in Candidates?
+              </p>
+              <p class="video-author">ChessBase India</p>
+              <p class="video-stats">14k views 1 day ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 12 -->
+        <div class="video-preview">
+          <a href="https://youtu.be/LnJwH_PZXnM?si=fMmSQ6Ym--lQlx3H">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-12.avif"
+                alt="img-12"
+              />
+              <div class="video-time">17:37</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-12.jpg"
+                alt="channel-picture-12"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How not to take things personally? | Frederik Imbo |
+                TEDxMechelen
+              </p>
+              <p class="video-author">TEDx Talks</p>
+              <p class="video-stats">21m views 6 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 13 -->
+        <div class="video-preview">
+          <a href="https://youtu.be/kKvK2foOTJM?si=PlCWivlku9BnH1z6">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-13.avif"
+                alt="img-13"
+              />
+              <div class="video-time">18:19</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-13.jpg"
+                alt="channel-picture-13"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                6 secrets to learning faster, backed by neuroscience | Lila
+                Landowski
+              </p>
+              <p class="video-author">TEDx Talks</p>
+              <p class="video-stats">7.4m views 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 14 -->
+        <div class="video-preview">
+          <a href="https://youtu.be/8SCv88yriYs?si=-Ym8fPTfPynTSpZ6">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-14.avif"
+                alt="img-14"
+              />
+              <div class="video-time">2:42</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-14.jpg"
+                alt="channel-picture-14"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How to Force Your Brain to Crave Doing Hard Things
+              </p>
+              <p class="video-author">RelentX</p>
+              <p class="video-stats">2.5m views 9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- card 15 -->
+        <div class="video-preview">
+          <a href="https://youtu.be/uOcKF-aLHyw?si=H_bcAF_H9QF8Q8Vy">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="/youtube-clone/images/thumbnail/img-15.avif"
+                alt="img-15"
+              />
+              <div class="video-time">4:40</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="/youtube-clone/images/profile/channel-profile-15.jpg"
+                alt="channel-picture-15"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">How to Get Whatever You Want</p>
+              <p class="video-author">GrindBuddy</p>
+              <p class="video-stats">10m views 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of 15 cards -->
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+p {
+  font-family: Roboto, Arial;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+.btn {
+  height: 36px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: rgb(245, 243, 243);
+  border: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .middle-section {
+    margin: 10px 0;
+  }
+}

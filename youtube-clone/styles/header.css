@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-wrap: wrap;
+  height: 60px;
+  background-color: white;
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 60px;
+}
+.hamburger-menu {
+  height: 25px;
+  cursor: pointer;
+  margin-right: 24px;
+  margin-left: 20px;
+}
+.youtube-logo {
+  height: 25px;
+  cursor: pointer;
+  width: 90px;
+}
+.middle-section {
+  margin-left: 70px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 600px;
+  height: 60px;
+}
+.search-bar {
+  height: 40px;
+  font-size: 17px;
+  border: 1px solid rgb(204, 204, 204);
+  padding-left: 10px;
+  border-radius: 30px;
+  flex: 1;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.15);
+}
+.search-btn {
+  height: 44px;
+  width: 66px;
+
+  border-radius: 25px;
+  border: 1px solid rgb(204, 204, 204);
+  margin-left: -35px;
+  padding-right: 18px;
+  padding-left: 18px;
+  margin-right: 20px;
+  position: relative;
+}
+.search-btn .tooltip,
+.voice-search .tooltip,
+.notifications-icon-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-btn:hover .tooltip,
+.voice-search:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+  opacity: 1;
+}
+.search-btn,
+.voice-search,
+.notifications-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.voice-search {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+}
+.voice-search-btn {
+  height: 24px;
+  margin-top: 4px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.plus-symbol {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: -8px;
+}
+
+.create-btn {
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+}
+
+.notification {
+  height: 25px;
+  cursor: pointer;
+}
+.notifications-icon-container {
+  position: relative;
+}
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+.profile-photo {
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
